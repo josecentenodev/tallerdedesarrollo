@@ -1,22 +1,22 @@
 ---
 interface Props {
+	svg: SVGElement | any;
 	title: string;
 	body: string;
-	href: string;
 }
 
-const { href, title, body } = Astro.props;
+const { title, body, svg } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div class="flex flex-col items-center justify-center bg-white space-y-2 border border-gray-100 rounded-xl p-4 md:p-6 hover:shadow-lg hover:translate-y-[-4px] transition-transform">
+	<div class="flex items-center justify-center w-12 h-12 rounded-full bg-ghost-white-100">
+		<img src={svg.src} alt="service logo" />
+	</div>
+	<div class="space-y-1 text-center">
+	  <h3 class="text-lg font-bold tracking-tighter">{title}</h3>
+	  <p class="text-sm text-ghost-white-500">
+		{body}
+	  </p>
+	</div>
+</div>
 

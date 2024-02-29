@@ -1,0 +1,53 @@
+---
+import Card from "../components/Card.astro";
+import App from "../Icons/App.svg";
+import Code from '../Icons/Code.svg'
+import GlobalSearch from '../Icons/GlobalSearch.svg'
+import Contact from '../Icons/Contact.svg'
+import Att from '../Icons/24.svg'
+import Brush1 from '../Icons/Brush1.svg'
+---
+
+<section class="w-full py-12 md:py-24">
+    <div class="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6 mx-auto">
+      <div class="space-y-3">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl">
+          Nuestro taller
+        </h2>
+        <p class="mx-auto max-w-3xl text-ghost-white-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          Proveemos las herramientas y los servicios necesarios para el éxito.
+        </p>
+      </div>
+      <div class="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-8">
+        <Card 
+          svg={Code} 
+          title="Desarrollo de Sitios Web" 
+          body="Creamos sitios web a medida para empresas y emprendedores, garantizando un diseño profesional y una experiencia de usuario excepcional."
+        />
+        <Card 
+          svg={App} 
+          title="Aplicaciones Web Adaptadas a tus Necesidades" 
+          body="También aplicaciones web personalizadas que satisfagan los requisitos específicos de tu negocio, con interfaces de usuario intuitivas y características avanzadas."
+        />
+        <Card 
+          svg={GlobalSearch} 
+          title="SEO y Velocidad del Sitio" 
+          body="Aseguramos el posicionamiento en los motores de búsqueda y la optimización de la velocidad de carga del sitio para una mejor experiencia del usuario y mayor visibilidad en línea."/>
+        <Card 
+          svg={Contact} 
+          title="Consultoría y Asesoramiento en Tecnología" 
+          body="Te asesoramos sobre tecnologías y herramientas adecuadas para tu negocio, junto con evaluaciones de infraestructura existente y recomendaciones para mejoras."
+        />
+        <Card 
+          svg={Brush1} 
+          title="Diseño de UX/UI" 
+          body="Garantizamos diseños de interfaces de usuario atractivos y funcionales que se preocupan por la experiencia del usuario y la interacción con tu producto digital."
+        />
+        <Card 
+          svg={Att} 
+          title="Mantenimiento y Soporte Técnico 24 horas" 
+          body="Ofrecemos servicios de mantenimiento y soporte técnico para garantizar el buen funcionamiento y la seguridad de tus sitios web y aplicaciones en todo momento. A toda hora."
+        />
+      </div>
+    </div>
+  </section>
