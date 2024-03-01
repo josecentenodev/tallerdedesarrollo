@@ -1,0 +1,45 @@
+---
+import Stroke from "../Icons/Stroke.svg";
+import PricingCard from "../components/PricingCard.astro";
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+  <div class="container px-4 md:px-6 mx-auto">
+    <div class="flex flex-col gap-4 items-center justify-center text-center">
+      <div class="space-y-2 flex flex-col justify-center items-center gap-5 mb-5">
+        <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          Planes a Medida para tu Negocio
+        </h2>
+        <p
+          class="max-w-[600px] text-ghost-white-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+        >
+        En Taller de Desarrollo, entendemos que cada negocio es único y tiene necesidades específicas. Por eso, hemos diseñado una variedad de planes adaptarnos a tus requerimientos.
+        </p>
+      </div>
+      <div
+        class="grid max-w-sm gap-4 sm:max-w-2xl sm:gap-8 lg:max-w-none lg:grid-cols-3"
+      >
+        <PricingCard
+          title="Website Institucional"
+          badge="Marca personal"
+          options={[
+            "Sin limite de secciones",
+            "Rápida demostración",
+            "Despliegue gratuito",
+          ]}
+        />
+      </div>
+      <p class="text-ghost-white-500 my-5">
+        No pierdas la oportunidad de hacer crecer tu emprendimiento o de buscar una solución digital para tu negocio.
+      </p>
+      <div class="flex flex-col gap-2 min-[400px]:flex-row">
+        <a
+          class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 px-8 text-sm font-medium shadow-sm transition-colors bg-blue-primary-500 text-white hover:bg-blue-primary-300"
+          href="#"
+        >
+          Agendá una Reunión Gratis
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
