@@ -1,6 +1,5 @@
 ---
-import Stroke from "../Icons/Stroke.svg";
-import PricingCard from "../components/PricingCard.astro";
+import PricingCard from "@/components/PricingCard.astro";
 ---
 
 <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
@@ -20,12 +19,69 @@ import PricingCard from "../components/PricingCard.astro";
         class="grid max-w-sm gap-4 sm:max-w-2xl sm:gap-8 lg:max-w-none lg:grid-cols-3"
       >
         <PricingCard
-          title="Website Institucional"
-          badge="Marca personal"
+          title="Sitio web institucional"
+          badge="Básico"
           options={[
-            "Sin limite de secciones",
-            "Rápida demostración",
-            "Despliegue gratuito",
+            "Diseño y desarrollo de un sitio web estático.",
+            "Páginas principales: inicio, sobre nosotros, servicios, contacto.",
+            "Diseño responsivo para dispositivos móviles.",
+            "Integración básica de SEO."
+          ]}
+        />
+        <PricingCard
+          title="Sitio web institucional"
+          badge="Avanzado"
+          options={[
+            "Todo lo incluido en el paquete básico.",
+            "Características adicionales: formularios de contacto interactivos, integración de redes sociales, galerías de imágenes, blog.",
+            "Funcionalidades avanzadas según necesidades específicas del cliente.",
+          ]}
+        />
+        <PricingCard
+          title="Aplicación de reserva"
+          badge="Básico"
+          options={[
+            "Desarrollo de una aplicación simple de reserva de turnos.",
+            "Interfaz intuitiva para los usuarios finales.",
+            "Funcionalidades básicas de reserva y gestión de citas.",
+            "Integración básica con sistemas de notificación.",
+          ]}
+        />
+        <PricingCard
+          title="Aplicación de reserva"
+          badge="Avanzado"
+          options={[
+            "Todo lo incluido en el paquete básico.",
+            "Características adicionales: notificaciones automáticas de citas, integración de pagos en línea, gestión de clientes, etc.",
+            "Personalización avanzada según necesidades específicas del cliente.",
+          ]}
+        />
+        <PricingCard
+          title="Software a medida"
+          badge="Básico"
+          options={[
+            "Desarrollo de un software personalizado para una necesidad específica.",
+            "Funcionalidades básicas según los requisitos del cliente.",
+            "Diseño intuitivo y fácil de usar.",
+            "Soporte técnico básico.",
+          ]}
+        />
+        <PricingCard
+          title="Software a medida"
+          badge="Avanzado"
+          options={[
+            "Todo lo incluido en el paquete básico.",
+            "Características adicionales: análisis de datos, integraciones con otros sistemas, personalización avanzada, etc.",
+            "Soporte técnico avanzado y mantenimiento continuo.",
+          ]}
+        />
+        <PricingCard
+          title="Paquete combinado"
+          badge="Avanzado"
+          options={[
+            "Desarrollo de un sitio web institucional y una aplicación de reserva de turnos o software a medida.",
+            "Personalización de ambas soluciones según las necesidades del cliente.",
+            "Soporte técnico integral y mantenimiento continuo para ambas plataformas.",
           ]}
         />
       </div>
