@@ -10,7 +10,7 @@ import PricingCard from "@/components/PricingCard.astro";
           Planes a Medida para tu Negocio
         </h2>
         <p
-          class="max-w-[600px] text-ghost-white-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+          class="mx-auto max-w-3xl text-ghost-white-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
         >
         En Taller de Desarrollo, entendemos que cada negocio es único y tiene necesidades específicas. Por eso, hemos diseñado una variedad de planes adaptarnos a tus requerimientos.
         </p>
@@ -18,72 +18,42 @@ import PricingCard from "@/components/PricingCard.astro";
       <div
         class="grid max-w-sm gap-4 sm:max-w-2xl sm:gap-8 lg:max-w-none lg:grid-cols-3"
       >
-        <PricingCard
-          title="Sitio web institucional"
-          badge="Básico"
-          options={[
-            "Diseño y desarrollo de un sitio web estático.",
-            "Páginas principales: inicio, sobre nosotros, servicios, contacto.",
-            "Diseño responsivo para dispositivos móviles.",
-            "Integración básica de SEO."
-          ]}
-        />
-        <PricingCard
-          title="Sitio web institucional"
-          badge="Avanzado"
-          options={[
-            "Todo lo incluido en el paquete básico.",
-            "Características adicionales: formularios de contacto interactivos, integración de redes sociales, galerías de imágenes, blog.",
-            "Funcionalidades avanzadas según necesidades específicas del cliente.",
-          ]}
-        />
-        <PricingCard
-          title="Aplicación de reserva"
-          badge="Básico"
-          options={[
-            "Desarrollo de una aplicación simple de reserva de turnos.",
-            "Interfaz intuitiva para los usuarios finales.",
-            "Funcionalidades básicas de reserva y gestión de citas.",
-            "Integración básica con sistemas de notificación.",
-          ]}
-        />
-        <PricingCard
-          title="Aplicación de reserva"
-          badge="Avanzado"
-          options={[
-            "Todo lo incluido en el paquete básico.",
-            "Características adicionales: notificaciones automáticas de citas, integración de pagos en línea, gestión de clientes, etc.",
-            "Personalización avanzada según necesidades específicas del cliente.",
-          ]}
-        />
-        <PricingCard
-          title="Software a medida"
-          badge="Básico"
-          options={[
-            "Desarrollo de un software personalizado para una necesidad específica.",
-            "Funcionalidades básicas según los requisitos del cliente.",
-            "Diseño intuitivo y fácil de usar.",
-            "Soporte técnico básico.",
-          ]}
-        />
-        <PricingCard
-          title="Software a medida"
-          badge="Avanzado"
-          options={[
-            "Todo lo incluido en el paquete básico.",
-            "Características adicionales: análisis de datos, integraciones con otros sistemas, personalización avanzada, etc.",
-            "Soporte técnico avanzado y mantenimiento continuo.",
-          ]}
-        />
-        <PricingCard
-          title="Paquete combinado"
-          badge="Avanzado"
-          options={[
-            "Desarrollo de un sitio web institucional y una aplicación de reserva de turnos o software a medida.",
-            "Personalización de ambas soluciones según las necesidades del cliente.",
-            "Soporte técnico integral y mantenimiento continuo para ambas plataformas.",
-          ]}
-        />
+      <PricingCard
+      title="Sitio web institucional"
+      badge="Básico ó Avanzado"
+      options={[
+        "Diseño y desarrollo de un sitio web estático.",
+        "Páginas principales: inicio, sobre nosotros, servicios, contacto.",
+        "Diseño responsivo para dispositivos móviles.",
+        "Integración básica de SEO.",
+        "Funcionalidades avanzadas según necesidades específicas del cliente.",
+      ]}
+    />
+    
+    <PricingCard
+      title="Aplicación de reservas"
+      badge="Básico ó Avanzado"
+      options={[
+        "Desarrollo de una aplicación simple de reserva de turnos.",
+        "Interfaz intuitiva para los usuarios finales.",
+        "Funcionalidades básicas de reserva y gestión de citas.",
+        "Integración básica con sistemas de notificación.",
+        "Personalización avanzada según necesidades específicas del cliente.",
+      ]}
+    />
+    
+    <PricingCard
+      title="Software a medida"
+      badge="Básico ó Avanzado"
+      options={[
+        "Desarrollo de un software personalizado para una necesidad específica.",
+        "Funcionalidades básicas según los requisitos del cliente.",
+        "Diseño intuitivo y fácil de usar.",
+        "Soporte técnico.",
+        "Funcionalidades avanzadas según necesidades específicas del cliente.",
+      ]}
+    />
+    
       </div>
 
     </div>
