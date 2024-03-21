@@ -1,0 +1,32 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Form from "@/components/Form.astro";
+---
+
+<Layout title="Taller de Desarrollo">
+  <main class="text-blue-dark-950">
+
+    <section class="flex justify-center w-full container mx-auto py-12 md:py-24 lg:py-32 xl:py-48 animate-pulse-fade-in">
+      <div class="flex flex-col space-y-5 p-6 flex-1">
+        <h1 class="text-4xl font-semibold whitespace-nowrap leading-none">
+          ¿Tienes una idea genial?
+        </h1>
+        <p class="text-ghost-white-600">
+          En nuestro taller de desarrollo, transformamos ideas en realidad. Cuéntanos qué proyecto tienes en mente y trabajaremos juntos para hacerlo realidad.
+        </p>
+        <p class="text-ghost-white-600">
+          No importa si es una pequeña chispa de inspiración o un proyecto completamente formado, estamos aquí para ayudarte a llevarlo al siguiente nivel.
+        </p>
+        <p class="text-ghost-white-600">
+          ¡No dudes en contactarnos! Estamos ansiosos por escuchar sobre tu próxima gran idea y convertirla en un éxito.
+        </p>
+        <p class="text-ghost-white-600">
+          ¿Listo para comenzar? Completa el formulario a continuación y contanos cómo podemos ayudarte.
+        </p>
+      </div>
+      <div class="flex justify-center flex-1">
+        <Form />
+      </div>
+    </section>
+  </main>
+</Layout>
