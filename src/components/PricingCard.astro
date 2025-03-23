@@ -1,4 +1,6 @@
 ---
+import Button from "@/components/Button.astro";
+
 
 interface Props {
 	badge: string;
@@ -24,10 +26,7 @@ const { badge, title, options } = Astro.props;
       )
       }
   </ul>
-  <a
-    class="inline-flex h-9 items-center justify-center rounded-md border border-ghost-white-200 text-sm font-medium shadow-sm transition-colors bg-spring-green-500 text-white hover:bg-spring-green-300"
-    href="/contact"
-  >
+  <Button href="/contact" variant="secondary">
     Consultar
-  </a>
+  </Button>
 </div>

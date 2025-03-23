@@ -1,3 +1,7 @@
+---
+import Button from "@/components/Button.astro";
+---
+
 <section class="w-full py-12 md:py-24 lg:py-32 xl:py-48 animate-pulse-fade-in">
     <div class="container px-4 md:px-6 w-full mx-auto">
       <div class="flex flex-col items-center space-y-4 text-center">
@@ -18,11 +22,9 @@
         </div>
         <div class="w-full max-w-sm space-y-2">
           <div class="flex justify-center">
-            <button
-              class="my-5 inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-primary-500 text-white hover:bg-blue-primary-300 h-9 rounded-md px-3"
-            >
+              <Button href="/contact" variant="primary">
               Agendá una Reunión Gratis
-            </button>
+            </Button>
           </div>
           <p class="text-xs text-ghost-white-600">
             Lleva tu idea digital al mercado en tiempo récord con nosotros

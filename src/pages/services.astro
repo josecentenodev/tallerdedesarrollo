@@ -1,10 +1,78 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Button from "@/components/Button.astro";
 
 ---
 
 <Layout title="Taller de Desarrollo">
-  <main>
+  <main class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold text-center mb-12">Servicios de Desarrollo Web</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Desarrollo de Sitios Web Personalizados</h3>
+        <p class="text-gray-600 mb-4">Sitios web diseñados desde cero utilizando tecnologías modernas para satisfacer las necesidades específicas de tu negocio.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Diseño responsivo</li>
+          <li>Optimización SEO</li>
+          <li>Enfoque en rendimiento</li>
+        </ul>
+      </div>
 
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Soluciones E-commerce</h3>
+        <p class="text-gray-600 mb-4">Desarrollo completo de tiendas en línea con integración segura de pagos y gestión de inventario.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Integración de carrito de compras</li>
+          <li>Configuración de pasarela de pago</li>
+          <li>Gestión de productos</li>
+        </ul>
+      </div>
+
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Desarrollo de Aplicaciones Web</h3>
+        <p class="text-gray-600 mb-4">Aplicaciones web complejas construidas con frameworks modernos para automatizar y optimizar tus procesos de negocio.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Funcionalidad personalizada</li>
+          <li>Autenticación de usuarios</li>
+          <li>Integración de base de datos</li>
+        </ul>
+      </div>
+
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Mantenimiento de Sitios Web</h3>
+        <p class="text-gray-600 mb-4">Mantén tu sitio web actualizado, seguro y funcionando de manera óptima.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Actualizaciones regulares</li>
+          <li>Monitoreo de seguridad</li>
+          <li>Optimización de rendimiento</li>
+        </ul>
+      </div>
+
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Diseño UI/UX</h3>
+        <p class="text-gray-600 mb-4">Creación de interfaces hermosas e intuitivas que proporcionan una excelente experiencia de usuario.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Diseño centrado en el usuario</li>
+          <li>Wireframing</li>
+          <li>Creación de prototipos</li>
+        </ul>
+      </div>
+
+      <div class="service-card p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow bg-white">
+        <h3 class="text-xl font-semibold mb-3">Consultoría Técnica</h3>
+        <p class="text-gray-600 mb-4">Asesoramiento experto sobre elección de tecnologías y estrategias de implementación para tus proyectos web.</p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>Selección de stack tecnológico</li>
+          <li>Planificación de arquitectura</li>
+          <li>Alcance del proyecto</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center">
+      <p class="text-xl mb-6">¿Listo para comenzar tu proyecto de desarrollo web?</p>
+      <Button href="/contact" variant="primary">Contáctanos</Button>
+    </div>
   </main>
 </Layout>
